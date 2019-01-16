@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+@import url('https://fonts.googleapis.com/css?family=Give+You+Glory');
+
 .ocultar{
     display:none;
+}
+ p{
+     color: #00ffea;
+     font-size:'Give You Glory', cursive;
+     
+ }
+h1{
+    color:   hsl(315, 85%, 37%) ;
+    font-size: 1cm;
+    font-family: 'Shadows Into Light', cursive;
+}
+#bienvenida{
+    border: 3px dashed #b62169 ;
+    height: 500px;
 }

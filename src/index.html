@@ -10,8 +10,8 @@
     <div id="bienvenida" >
           <h1>Bienvenidos al cifrado de cartas</h1>
           <p> Instrucciones</p>
-          <input id="codificar"type="button" value="codificar">
-          <input id="decodificar" type="button" value="decodificar">
+          <input id="codificar" type="button" value="empezar">
+          
   
   
       </div>
@@ -19,14 +19,22 @@
       
       <div id="boxcod" class="ocultar">
         <h1>Codifica tu msj aqui</h1>
+        <p> escoge un num de espacios para que se recorra el alfabeto</p>
+        <input id="numoffset" type="number" min="0" max="10" placeholder="ingresa un numero">
+        <p> ingresa tu msj para codificarlo</p>
+        <input id="msj" type="text" placeholder="ingresa tu mensaje aqui">
+        <input  id="aceptar" type="button" value="codificar">
+        <input id="regresar" type="button" value="regresar" >
+        <input id="decodificar" type="button" value="decodificar">
+        <p id="resultado"></p>
+
   
   
       </div>
   
-      <div id="boxendcod" class="ocultar">
-       <h1>Decodifica tu msj aqui </h1>
-  
-      </div>
+      
+
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
