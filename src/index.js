@@ -1,19 +1,27 @@
 const codificar=document.getElementById("codificar");
 const regresar =document.getElementById("regresar");
-let offset=document.getElementById("numoffset").value;
-const str=document.getElementById("msj").value;
+let numoffset=document.getElementById("numoffset");
+let msj=document.getElementById("msj");
 const aceptarValue=document.getElementById("aceptar");
 const bienvenida=document.getElementById("bienvenida");
 const boxcod=document.getElementById("boxcod");
+const decodificar=document.getElementById("decodificar");
+
 
 aceptarValue.addEventListener("click",()=>{
-    console.log(offset);
-    console.log(str);
+    let str= msj.value;
+    let offset=numoffset.value;
    let resultadoCifrado = window.cipher.encode(offset, str);
-   console.log(resultadoCifrado)
-
    // pintar - document.geteem
     document.getElementById("resultado").innerHTML=`este es tu msj ${resultadoCifrado}`;
+});
+
+decodificar.addEventListener("click",() =>{
+    let str=msj.value;
+    let offset=numoffset.value;
+    let resultadoDescifrado= window.cipher.decode(offset, str);
+    document.getElementById("resultadodes").innerHTML=`este es tu msj descifrado${resultadoDescifrado}`;
+
 });
 
 codificar.addEventListener("click",() =>{
