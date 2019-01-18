@@ -1,21 +1,62 @@
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
-
-@import url('https://fonts.googleapis.com/css?family=Give+You+Glory');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
 
 .ocultar{
     display:none;
 }
  p{
-     color: #00ffea;
-     font-size:'Give You Glory', cursive;
+     color: black;
+     font-family:'Merienda', cursive;
+     font-size:30px;
      
  }
 h1{
     color:   hsl(315, 85%, 37%) ;
     font-size: 1cm;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Lobster Two', cursive;
+    background: #D8BFD8
+}
+
+ol{
+    font-family: 'Gochi Hand', cursive;
+    color: rgb(75, 161, 241);
+    font-size: 25px;
 }
 #bienvenida{
-    border: 3px dashed #b62169 ;
+    
     height: 500px;
+    
 }
+
+#boxcod{
+    border: 3px dashed #b62169;
+}
+
+.input{
+    border-radius: 2px;
+    border: 3px dotted #800080;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    font-family:'Handlee', cursive;
+    font-weight: 600;
+    font-size: 20px;
+    color: #9d45a0;
+    background-color: #eaf1e7;
+    border-radius: 6px;
+    border: 1px solid  #008B8B ;
+}
+
+.imagen{
+    height: 50%;
+    width:50%;
+
+}
+

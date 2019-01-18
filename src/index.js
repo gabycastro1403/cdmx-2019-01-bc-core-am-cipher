@@ -13,14 +13,14 @@ aceptarValue.addEventListener("click",()=>{
     let offset=numoffset.value;
    let resultadoCifrado = window.cipher.encode(offset, str);
    // pintar - document.geteem
-    document.getElementById("resultado").innerHTML=`este es tu msj ${resultadoCifrado}`;
+    document.getElementById("resultado").innerHTML=`Este es tu mensaje codificado ${resultadoCifrado}`;
 });
 
 decodificar.addEventListener("click",() =>{
     let str=msj.value;
     let offset=numoffset.value;
     let resultadoDescifrado= window.cipher.decode(offset, str);
-    document.getElementById("resultadodes").innerHTML=`este es tu msj descifrado${resultadoDescifrado}`;
+    document.getElementById("resultadodes").innerHTML=`Este es tu mensaje descifrado ${resultadoDescifrado}`;
 
 });
 

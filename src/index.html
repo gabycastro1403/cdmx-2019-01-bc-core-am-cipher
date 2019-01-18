@@ -9,8 +9,31 @@
       
     <div id="bienvenida" >
           <h1>Bienvenidos al cifrado de cartas</h1>
-          <p> Instrucciones</p>
-          <input id="codificar" type="button" value="empezar">
+          <p> Esta página esta creada para los papás que quieren mantener oculta su lista de compras para cualquier sorpresa que quieran darle a tus hijos.
+            Puede ser:
+          </p>
+          <ol>
+            <li> Lista de regalos de su cumpleaños.</li>
+            <li> Lista de regalos para Dia de Reyes.</li>
+            <li> Lista de compras para Navidad.</li>
+          </ol>
+          <p>Puedes darle un sin fin de utilidades a esta página.</p>
+          <p>Lo único que tienes que hacer es : </p>
+          <ol>
+            <li>Ingresa el número de espacios que deseas que se recorra el alfabeto.</li>
+            <li>El mensaje a codificar.</li>
+          </ol>
+          <p>¡Listo tienes tu msj codificado!</p>  
+          
+          <p>Para decodificar tu mensaje solo tienes que:</p>
+          <ol>
+            <li>Ingresar el número de espacios con el que codificaste el msj. </li>
+            <li>Ingresar el msj a decifrar.</li>
+          </ol>
+          <p>¡Listo ya tienes tu msj descifrado!</p>
+
+          <input class="boton" id="codificar" type="button" value="empezar">
+          <img  class ="imagen" src="https://i.ytimg.com/vi/nFPFVLGZLsg/maxresdefault.jpg">
           
   
   
@@ -18,14 +41,14 @@
       
       
       <div id="boxcod" class="ocultar">
-        <h1>Codifica tu msj aqui</h1>
-        <p> escoge un num de espacios para que se recorra el alfabeto</p>
-        <input id="numoffset" type="number" min="0" max="10" placeholder="ingresa un numero">
-        <p> ingresa tu msj para codificarlo</p>
-        <input id="msj" type="text" placeholder="ingresa tu mensaje aqui">
-        <input  id="aceptar" type="button" value="codificar">
-        <input id="regresar" type="button" value="regresar" >
-        <input id="decodificar" type="button" value="decodificar">
+        <h1>Ingresa tu mensaje aqui</h1>
+        <p> Escoge el número de espacios para que se recorra el alfabeto.</p>
+        <input class="input" id="numoffset" type="number" min="0" max="10" placeholder="ingresa un numero">
+        <p> Ingresa tu mensaje a codificar o descifrar.</p>
+        <input class="input" id="msj" type="text" placeholder="ingresa tu mensaje aqui">
+        <input class="boton" id="aceptar" type="button" value="codificar">
+        <input class="boton" id="regresar" type="button" value="regresar" >
+        <input class="boton" id="decodificar" type="button" value="decodificar">
         <p id="resultado"></p>
         <p id="resultadodes"></p>
 
