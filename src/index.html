@@ -8,7 +8,7 @@
   <body>
       
     <div id="bienvenida" >
-          <h1>Bienvenidos al cifrado de cartas</h1>
+          <div id="head"><h1>Bienvenidos al cifrado de cartas</h1></div>
           <p> Esta página esta creada para los papás que quieren mantener oculta su lista de compras para cualquier sorpresa que quieran darle a tus hijos.
             Puede ser:
           </p>
@@ -30,9 +30,9 @@
             <li>Ingresar el número de espacios con el que codificaste el msj. </li>
             <li>Ingresar el msj a decifrar.</li>
           </ol>
-          <p>¡Listo ya tienes tu msj descifrado!</p>
+          <p>¡Listo ya tienes tu msj descifrado!</p><br>
 
-          <input class="boton" id="codificar" type="button" value="empezar">
+          <input class="boton" id="codificar" type="button" value="empezar"><br>
           <img  class ="imagen" src="https://i.ytimg.com/vi/nFPFVLGZLsg/maxresdefault.jpg">
           
   
@@ -41,14 +41,14 @@
       
       
       <div id="boxcod" class="ocultar">
-        <h1>Ingresa tu mensaje aqui</h1>
+       <div id="headcod"> <h1>Codifica tu mensaje aqui</h1></div>
         <p> Escoge el número de espacios para que se recorra el alfabeto.</p>
         <input class="input" id="numoffset" type="number" min="0" max="10" placeholder="ingresa un numero">
         <p> Ingresa tu mensaje a codificar o descifrar.</p>
-        <input class="input" id="msj" type="text" placeholder="ingresa tu mensaje aqui">
+        <input class="input" id="msj" type="text" placeholder="ingresa tu mensaje aqui"><br>
         <input class="boton" id="aceptar" type="button" value="codificar">
-        <input class="boton" id="regresar" type="button" value="regresar" >
         <input class="boton" id="decodificar" type="button" value="decodificar">
+        <input class="boton" id="regresar" type="button" value="regresar" >
         <p id="resultado"></p>
         <p id="resultadodes"></p>
 
