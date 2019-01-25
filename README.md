@@ -1,3 +1,63 @@
+#Cifrado de Cartas
+La página está hecha para papás que quieren darle un regalo sorpresa a sus hijos, pero de igual manera puede ser utilizada por cualquier persona que desee hacer algún tipo de presente y tenga la necesidad de hacer uso de la página. Como papás siento que se tiene, en varias ocasiones, la necesidad de comprar algún presente para sus hijos y cuando tienes niños en casa se puede dificultar muchísimo este tipo de tareas, ya que los niños son curiosos por naturaleza y les gusta explorar todo . Así que tener una lista con los presentes que le vas a regalar en su cumpleaños, puede no ser una muy buena idea. Es por esto que surge la necesidad de crear una pagina que tenga una lista con los regalos, lo encripte y que además me permita comprar los regalos sin necesidad de tener que ocultar mis notas o que se me olvide algo si lo tengo solo en mente.
+
+Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
+
+![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+
+El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
+
+#Como comenzar a trabajar
+
+Este proyecto esta hecho solo en vanilla JS. No utilice ninguna librería o framework.
+
+Para comenzar a trabajar necesitas forkear y clonar este repositorio.
+Estan incluidas pruebas unitarias, las cuales ya paso al 100%.
+
+#Requisitos
+
+Si quieres utilizar este proyecto, necesitas los siguientes programas:
+
+  1. Antes que nada, asegúrate de tener un :pencil: editor de texto en
+   condiciones, algo como [Atom](https://atom.io/), 
+   [Visual Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com) o cualquier otro de tu preferencia.
+2. Para ejecutar los comandos a continuación necesitarás una :shell:
+   [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell),
+   que es un programita que interpreta líneas de comando (command-line
+   interpreter) así como tener [git](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/scm/01-git)
+   instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
+   ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
+   también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
+   aunque recomendaría que consideres probar :penguin: GNU/Linux como tu Sistema Operativo.
+3. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
+   de [ este repositorio](https://github.com/Laboratoria/cdmx-2019-01-bc-core-am-cipher) de tu cohort, tus _coaches_ te compartirán un _link_ a un repositorio y te 
+   darán acceso de lectura en ese repo.
+4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
+   tu _fork_ a tu computadora (copia local).
+5. 📦 Instala las dependencias del proyecto con el comando `npm
+   install`. Esto asume que has instalado [Node.js](https://nodejs.org/) (que
+   incluye [npm](https://docs.npmjs.com/)).
+6. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
+   pruebas unitarias (unit tests) con el comando `npm run test`.
+7. A codear se ha dicho! :rocket:
+
+# Ejecutando pruebas
+Para ejecutar las pruebas que vienen integradas necesitas hacer los siguientes pasos :
+1. Ingresa a la terminal 
+2. Posicionate en la carpeta del proyecto con los comandos cd para entrar a las carpetas y pwd para saber en donde estas posicionado.
+3. una vez que estes en la carpeta ingresa el siguiente comando "npm run test".
+4. Recuerda que tu proyecto debe estar en vanilla JS, no puedes tener errore de     sintaxis y debes de pasar los test minimo al 70%.
+
+# Experiencia de Usuario
+Si quieres saber más sobre mi proceso en crear la página y como tome las decisiones para el diseño. Ingresa al siguiente link:
+ 
+
+  
+
+
+
+
+
 # Cifrado César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
@@ -266,10 +326,10 @@ Herramientas:
 Esta sección está  para ayudarte a llevar un control de lo que vas completando.
 
 ### Parte Obligatoria
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
+* [X] `README.md` incluye info sobre proceso y decisiones de diseño.
+* [X] `README.md` explica claramente quiénes son los usuarios y su relación con
   el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los
+* [X] `README.md` explica claramente cómo el producto soluciona los
   problemas/necesidades de los usuarios.
 * [X] Usa VanillaJS.
 * [X] No utiliza `this`.
@@ -289,6 +349,6 @@ Esta sección está  para ayudarte a llevar un control de lo que vas completando
 ### Parte Opcional: "Hacker edition"
 * [X] Cifra/descifra minúsculas
 * [X] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
-* [ ] Modelo de negocio.
+* [X] Permite usar un `offset` negativo.
+* [X] Modelo de negocio.
 
