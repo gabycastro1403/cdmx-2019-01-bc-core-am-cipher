@@ -1,5 +1,8 @@
-#Cifrado de Cartas
-La página está hecha para papás que quieren darle un regalo sorpresa a sus hijos, pero de igual manera puede ser utilizada por cualquier persona que desee hacer algún tipo de presente y tenga la necesidad de hacer uso de la página. Como papás siento que se tiene, en varias ocasiones, la necesidad de comprar algún presente para sus hijos y cuando tienes niños en casa se puede dificultar muchísimo este tipo de tareas, ya que los niños son curiosos por naturaleza y les gusta explorar todo . Así que tener una lista con los presentes que le vas a regalar en su cumpleaños, puede no ser una muy buena idea. Es por esto que surge la necesidad de crear una pagina que tenga una lista con los regalos, lo encripte y que además me permita comprar los regalos sin necesidad de tener que ocultar mis notas o que se me olvide algo si lo tengo solo en mente.
+# Cifrado de Cartas
+
+La página está hecha para papás que quieren darle un regalo sorpresa a sus hijos, pero de igual manera puede ser utilizada por cualquier persona que desee hacer algún tipo de presente y tenga la necesidad de hacer uso de la página.
+
+ Como papás siento que se tiene, en varias ocasiones, la necesidad de comprar algún presente para sus hijos y cuando tienes niños en casa se puede dificultar muchísimo este tipo de tareas, ya que los niños son curiosos por naturaleza y les gusta explorar todo . Así que tener una lista con los presentes que le vas a regalar en su cumpleaños, puede no ser una muy buena idea. Es por esto que surge la necesidad de crear una pagina que tenga una lista con los regalos, lo encripte y que además permita comprar los regalos sin necesidad de tener que ocultar mis notas o que se me olvide algo si lo tengo solo en mente.
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
 
@@ -7,14 +10,26 @@ Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Ca
 
 El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
 
-#Como comenzar a trabajar
+## Como comenzar a trabajar
 
 Este proyecto esta hecho solo en vanilla JS. No utilice ninguna librería o framework.
 
 Para comenzar a trabajar necesitas forkear y clonar este repositorio.
 Estan incluidas pruebas unitarias, las cuales ya paso al 100%.
 
-#Requisitos
+Este proyecto esta hecho para cifrar y descifrar letras, mayúsculas y minúsculas, caracteres especiales y respeta el espacio entre letras.
+
+## Especificaciones de código
+
+- Tiene una estructura básica de html5 .En el html no tengo ningún evento todo ocurre en el archivo index.js.
+En este archivo vienen las opciones de ingresar el mensaje a codificar o decodificar y un número de offset que el usuario eliga, todo esto a través de input type text y number.
+
+- El archivo index.js tiene solo cambios de página, las acciones de los botones (addEventListener,getElementById), recibe los valores que el usuario ingrese para que sean utilizados en la fórmula de encode y decode, respectivamente.
+
+- En el archivo cipher.js esta el objeto window cipher y las funciones decode y encode.
+Las funciones actuan a base de un for que itera a través de las palabras que el usuario ingrese convirtiendolas a código ASCII con la función charCodeAt y recorriendo su posición en el alfabeto con el número que el usuario ingresó, después lo convierte a letras otra vez con la función fromCharCode .  
+
+## Requisitos
 
 Si quieres utilizar este proyecto, necesitas los siguientes programas:
 
@@ -41,15 +56,18 @@ Si quieres utilizar este proyecto, necesitas los siguientes programas:
    pruebas unitarias (unit tests) con el comando `npm run test`.
 7. A codear se ha dicho! :rocket:
 
-# Ejecutando pruebas
+## Ejecutando pruebas
 Para ejecutar las pruebas que vienen integradas necesitas hacer los siguientes pasos :
 1. Ingresa a la terminal 
 2. Posicionate en la carpeta del proyecto con los comandos cd para entrar a las carpetas y pwd para saber en donde estas posicionado.
 3. una vez que estes en la carpeta ingresa el siguiente comando "npm run test".
 4. Recuerda que tu proyecto debe estar en vanilla JS, no puedes tener errore de     sintaxis y debes de pasar los test minimo al 70%.
 
-# Experiencia de Usuario
+## Experiencia de Usuario
 Si quieres saber más sobre mi proceso en crear la página y como tome las decisiones para el diseño. Ingresa al siguiente link:
+[Experiencia de Usuario](https://docs.google.com/document/d/1B-I7HKLJ7bEx1x81usnPo_nOaLk7GQgcrcfHXAh5QLY/edit?usp=sharing)
+
+![imagenux](https://i.ibb.co/YyFWZs4/Captura-de-pantalla-2019-01-23-a-la-s-16-55-51.png)
  
 
   
@@ -349,6 +367,6 @@ Esta sección está  para ayudarte a llevar un control de lo que vas completando
 ### Parte Opcional: "Hacker edition"
 * [X] Cifra/descifra minúsculas
 * [X] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [X] Permite usar un `offset` negativo.
+* [ ] Permite usar un `offset` negativo.
 * [X] Modelo de negocio.
 
